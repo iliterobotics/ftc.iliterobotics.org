@@ -1,0 +1,558 @@
+/* components */
+
+::selection {
+	background-color: #317EAC;
+	color: white;
+	text-shadow: 0 0 1px black;
+}
+
+a:link {
+	-webkit-tap-highlight-color: #2376c6; 
+}
+
+.btn {
+	border: 2px solid;
+	box-shadow: inset 0 2px rgba(255,255,255,.5);
+}
+
+.panel {
+	padding: 0px;
+}
+
+.panel-heading {
+	margin: 0px;
+}
+
+.shadow {
+	box-shadow: 0 0 12px gray;
+}
+
+.text-shadow {
+	text-shadow: 0 1px 0 white;
+}
+
+span.first {
+	font-family: Arial Black, Arial Bold, Arial;
+	font-style: italic;
+}
+
+/* Prints */
+
+.hidden-print {
+	@media(print){
+		display: none!important;
+	}
+}
+
+.print {
+	.btn;
+	.btn-primary;
+	.btn-xs;
+	.hidden-print;
+}
+
+body {
+	padding-top: 55px;
+	background: url(../img/pattern-paper.png);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2), screen and (max-device-pixel-ratio: 2) {
+body {
+	background: url(../img/pattern-paper@2X.png);
+	background-size: 64px;
+}
+}
+
+.notice {
+	background: #c0392b;
+	color: white;
+	line-height: 55px;
+	text-align: center;
+}
+
+/* page navigation */
+
+nav {
+	padding: 10px 0px;
+	text-align: center;
+	background: #1c1d21;
+	background: url(../img/pattern-illusion.png);
+	box-shadow: inset 0 -2px 0 rgba(0,0,0,0.5), 0 2px 0 rgba(255,255,255,0.5);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9001;
+	a {
+		.btn;
+		.btn-primary;
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2), screen and (max-device-pixel-ratio: 2) {
+nav {
+	background: url(../img/pattern-illusion@2X.png);
+	background-size: 54px;
+}
+}
+
+@media (max-width: @screen-xs-max) {
+nav {
+	position: relative;
+	margin-top: -55px;
+	a {
+		display: inline-block;
+		width: 40%;
+		margin: 0;
+		padding: 3px;
+	}
+}
+}
+
+/* page header */
+
+header {
+	text-align: center;
+	background: black;
+	background: url(../img/photo-sm-1.jpg);
+	background-size: 100%;
+	background-size: cover!important;
+	background-position: center;
+	position: relative;
+	box-shadow: inset 0px -8px 20px black;
+	/* parallax scrolling */
+	margin-top: -40px;
+	padding: 72px 0 32px;
+	span {
+		padding: 6px;
+		background: black;
+		background: rgba(0,0,0,.5);
+		color: white;
+		border-top-left-radius: 4px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}
+
+/* page title */
+
+.title {
+	text-align: center;
+	margin-bottom: 32px;
+	.text-shadow;
+		h1:nth-child(2) {
+			margin: 2px;
+		}
+		h1:nth-child(3) {
+			margin: 4px;
+		}
+}
+
+/* homepage */
+
+#index {
+	padding: 24px 0px;
+	.hero {
+		.well;
+		.lead;
+		display: block;
+		text-align: center;
+	}
+	article {
+	.make-row();
+		#sitemap, #bring {
+			.make-md-column(6);
+			.panel;
+			.panel-default;
+			.shadow;
+			h3 {
+				.panel-heading;
+			}
+			p {
+				.panel-body;
+			}
+			p:last-child {
+				.panel-footer;
+			}
+		}
+		#sitemap {
+			.disabled {
+				cursor: text;
+				background-color: #f5f5f5;
+				color: gray;
+				h4 {
+					color: gray;
+				}
+			}
+			.disabled:hover {
+				background-color: #f5f5f5;
+			}
+		}
+		#bring {
+			.panel-primary;
+			box-shadow: 0 0 12px @brand-primary;
+			h3 {
+				.panel-heading;
+			}
+		}
+		/* direct child workaround */
+		h3 {
+			.panel-heading;
+		}
+		p:last-child {
+			.panel-footer;
+			margin-bottom: 0px;
+		}
+	}
+}
+
+#info {
+	padding: 24px 0px;
+	article {
+		.make-md-column(8);
+		a {
+			.btn;
+			.btn-primary;
+			.btn-sm;
+		}
+	}
+	aside {
+		.make-md-column(4);
+		.well
+	}
+	p {
+		.lead;
+	}
+}
+
+/* homepage full-width slideshow */
+
+#slideshow {
+	.item {
+		height: 300px;
+		background: url(../img/iphoto-import@2X.png);
+		background-size: cover;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+	}
+	a.carousel-control span {
+		font-size: 56px;
+		margin-top: -50px;
+	}
+}
+
+/* challenge */
+
+body > .container {
+	.shadow;
+}
+
+#oveview, #project, #game, #field {
+	background: white;
+	padding: 32px;
+	.make-row();
+	iframe {
+		border: none;
+		width: 100%;
+	}
+	article, aside {
+		.make-md-column(6);
+	}
+}
+
+/* schedule */
+
+#timeline, #volunteers {
+	margin-bottom: 12px;
+	.lead;
+	.print {
+		.btn-lg;
+	}
+	article {
+		.make-row();
+		margin: 6px 0px;
+		time {
+			.make-md-column(6);
+			text-align: right;
+			padding: 12px;
+		}
+		aside {
+			.make-md-column(6);
+			padding: 12px;
+			border-left: 1px solid black;
+		}
+	}
+}
+
+@media(print){
+	#timeline article {
+		width: 100%;
+		margin: 12px 0px;
+		font-size: 18px;
+		time {
+			width: 25%;
+			text-align: right;
+			padding: 12px;
+			font-weight: bold;
+		}
+		aside {
+			width: 75%;
+			text-align: left;
+			padding: 12px;
+			border-left: 1px solid black;
+		}
+	}
+}
+
+/* location */
+
+#address {
+	background: black;
+	background: url(../img/photo-bhs.jpg);
+	background-size: 100%;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: -12px;
+	padding: 20px 0px;
+	color: white;
+	text-shadow: 0 0 4px black;
+	h3 {
+		color: white;
+	}
+	#bhs {
+		.make-row();
+		article {
+			.make-md-column(6);
+			.lead;
+			a {
+				.btn;
+				.btn-primary;
+			}
+		}
+		aside {
+			.lead;
+			.make-md-column(6);
+			form {
+				input[type="text"] {
+					.btn;
+						/* cross-browser select workaround */
+						user-select: initial!important;
+						-webkit-user-select: initial!important;
+						-moz-user-select: initial!important;
+						-ms-user-select: initial!important;
+						-o-user-select: initial!important;
+						text-align: left;
+						text-shadow: none;
+						cursor: text;
+					}
+				input[type="submit"], input[type="reset"], a {
+					.btn;
+					.btn-primary;
+				}
+			}
+		}
+	}
+}
+
+p#error {
+	.notice;
+	margin: 0px;
+}
+
+#map-canvas {
+	margin: 0px;
+	height: 500px;
+	width: 100%;
+	display: block;
+}
+
+/* about */
+
+#ilite {
+	background:url(../img/ilite-cheer.jpg);
+	color: white;
+	article {
+		.make-md-column(6);
+		.make-md-column-offset(6);
+		background: black;
+		padding: 16px 16px 42px 16px;
+		background: rgba(0,0,0,.5);
+		text-align: justify;
+		h3 {
+			color: white;
+		}
+		div {
+			.btn-group;
+			.btn-group-justified;
+			a {
+				.btn-success;
+				border-color: white;
+			}
+		}
+	}
+}
+
+#usstem, #first {
+	article {
+		.make-md-column(6);
+		padding-top: 18px;
+		text-align: justify;
+		h3 a {
+			.btn;
+			.btn-link;
+			.btn-xs;
+			margin-top: -4px;
+			margin-left: 2px;
+		}
+	}
+}
+
+#sponsors {
+	text-align: center;
+	padding: 24px 0px;
+	h1 {
+		.text-shadow;
+	}
+	p {
+	.btn-group;
+	.btn-group-justified;
+		a {
+		.btn-primary;
+		}
+	}
+}
+
+/* lunch */
+
+#lunch {
+	article {
+		.row;
+		.make-row();
+		margin-bottom: 20px;
+		#preorder, #concessions {
+			.make-md-column(6);
+			.panel;
+			.panel-default;
+			.shadow;
+			h3 {
+				.panel-heading;
+			}
+			p {
+				.panel-body;
+			}
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		#preorder p:last-child {
+			.panel-footer;
+			margin-bottom: 0px;
+		}
+		/* direct child workaround */
+		h3 {
+			.panel-heading;
+		}
+	}
+}
+
+/* outreach */
+
+#outreach {
+	article {
+		.make-row();
+		#food, #toys {
+			.make-md-column(6);
+		}
+	}
+}
+
+/* volunteer */
+
+#volunteer {
+	article {
+		.make-row();
+		#ilite-info, #vafirst-info {
+			.make-md-column(6);
+		}
+		span {
+			color: @brand-danger;
+		}
+	}
+	p:first-child {
+		.lead;
+	}
+}
+
+#signup {
+	margin-top: 1em;
+	article {
+		.make-row();
+			margin-top: 1em;
+			padding: 1em;
+			border-top: 1px solid rgb(139,139,139);
+		#ilite-signup, #vafirst-signup {
+			.make-md-column(6);
+		}
+	}
+	span {
+		color: @brand-danger;
+	}
+	p {
+		.text-center;
+		.lead;
+	}
+}
+
+/* footer */
+
+footer {
+	padding: 32px 0px;
+	background: #1c1d21;
+	background: url(../img/pattern-illusion.png);
+	border-top: 1px solid rgba(255,255,255,0.08);
+	box-shadow: inset 0px 1px 0px rgba(0,0,0,0.25);
+	text-shadow: 0 1px 1px black;
+	article {
+		a {
+			color: white;
+			margin-right: 12px;
+		}
+		a:hover {
+			color: white;
+		}
+	}
+	aside {
+	text-align: right;
+		a {
+			.btn;
+			.btn-primary;
+		}
+	}
+	p {
+		color: #767780;
+		a, a:hover {
+			color: #767780;
+		}
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+	footer aside a {
+		.btn-block;
+		margin: 10px 0px;
+	}
+}
+
+footer .row {
+	.make-row();
+	article {
+		.make-md-column(10);
+	}
+	aside {
+		.make-md-column(2);
+	}
+}

@@ -1,0 +1,87 @@
+<?php include 'header.php'; ?>
+
+<section id="challenge">
+	<div class="container">
+		<div class="title">
+			<h1><small><span class="first">FIRST</span> Technical Challenge</small></h1>
+			<h1>Block Party!</h1>
+			<h1><small>It's a party! What else?</small></h1>
+		</div>
+	</div>
+</section>
+<div class="container">
+	<section id="oveview">
+		<aside>
+			<iframe width="420" height="315" src="//www.youtube.com/embed/UPAATO-NpcM?theme=light" frameborder="0" allowfullscreen></iframe>
+		</aside>
+		<article>
+			<h3>Overview</h3>
+			<img src="img/ftc-logo-sm.png" alt="block party logo" class="pull-right" width="100" height="150">
+			<blockquote>Welcome to the 2013-2014 FTC BLOCK PARTY!<sup>SM</sup> Below, you will find all of the documentation on the game and how to build an official field.	
+			<br>
+			<br><i>* Middle/High School students in the US, Canada, and Mexico</i>
+			</blockquote>
+			<div id="accordion">
+				<a target="_blank" href="http://www.usfirst.org/roboticsprograms/ftc/game" class="btn btn-primary">Challenge Homepage</a>
+				<a class="btn btn-danger" data-toggle="collapse" data-target="#downloads">Video Downloads (for Schools)</a>
+					<div id="downloads" class="collapse">
+						<h3>Video Downloads</h3>
+						<blockquote>These download links are for schools without access to YouTube. Don't have Windows Media Player? Get <a target="_blank" href="http://www.videolan.org/vlc/index.html">VLC</a> or a <a target="_blank" href="http://support.apple.com/kb/HT3526">QuickTime Codec</a>.<br>
+								<br>
+								<a target="_blank" href="http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FTC/Game_Info/2013/2013-14_FTC_Game_Animation.mpg"><b>Game Animation</b></a> (MPG, 6:18)<br>
+        <a target="_blank" href="http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FTC/Game_Info/2013/2013-2014-FTC-Game-Animation-Transcript.docx"><b>Game Animation Transcript</b></a> (DOC)<br>
+						</blockquote>
+					</div>
+			</div>
+		</article>
+	</section>
+	<section id="game">
+		<aside>
+   <iframe width="480" height="302" src="http://www.ustream.tv/embed/recorded/38389079?v=3&amp;wmode=direct" scrolling="no"></iframe>
+		</aside>
+		<article>
+			<h3>Robot Game</h3>
+			<blockquote><a target="_blank" href="http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FTC/Game_Info/2013/FTC-2013-2014_Game_One_Page.pdf">One-Page Game Overview</a>
+			- The first place to go for basic game and scoring information.
+			<br><br>
+			<a target="_blank" href="http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FTC/Game_Info/2013/FTC-2013-2014_Game_Manual_Part_1.pdf">Game Manual Part 1</a>
+			/ <a target="_blank" href="http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FTC/Game_Info/2013/FTC-2013-2014_Game_Manual_Part_2.pdf">Game Manual Part 2</a>
+   - This document contains all the information about this year's game.
+   <br><br>
+   <a htarget="_blank" ref="http://www.usfirst.org/roboticsprograms/ftc/gameqainstructions">Q&amp;A</a>
+   - Answers to your burning questions.
+		</blockquote>
+		</article>
+	</section>
+	<section id="field">
+		<aside>
+			<a target="_blank" href="img/ftc-field.jpg" class="thumbnail">
+				<img src="img/ftc-field.jpg"/>
+			</a>
+		</aside>
+		<article>
+			<h3>Field Setup</h3>
+   <blockquote><a target="_blank" href="http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FTC/Game_Info/2013/FTC-2013-2014_Playing_Field_Setup_Guide.pdf">Playing Field Setup Guide</a>
+   - Instructions on how to properly set up the field using your game components.
+   <br><br>
+   <a target="_blank" href="http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FTC/Game_Info/2013/FTC-2013-2014_Game_BOM_main.pdf">Bill of Materials</a>
+   - A comprehensive list of the materials needed to set up the field.
+   <br><br>
+   <a target="_blank" href="http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FTC/FTC_Documents/Low-Cost-Perimeter-Build-Guide.pdf">Low-cost Field Perimeter Build Guide</a>
+   - A guide showing you where materials are sold and their SKUs at common hardware stores.
+   <br><br>
+   <a target="_blank" href="http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FTC/Game_Info/2013/FTC-2013-2014_Game_BOM_shopping.pdf">Shopping Guide</a>
+   - A guide showing you how to build a low-cost field.
+   <br><br>
+   <a target="_blank" href="http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FTC/Game_Info/2013/LED_Supplement.pdf">LED Supplement</a>
+   - Instructions for building the LED Balance Arm.
+   </blockquote>
+   <h3>Field Build</h3>
+   <blockquote>
+   <a target="_blank" href="http://www.usfirst.org/sites/default/files/uploadedFiles/Robotics_Programs/FTC/Game_Info/2013/FTC-2013-2014_Playing_Field_Build_Guide.pdf">Field Build Guide</a>
+   - Instructions for building the Field Elements in this year's FTC Game.
+			</blockquote>
+		</article>
+	</section>
+</div>
+<?php include 'footer.php'; ?>
