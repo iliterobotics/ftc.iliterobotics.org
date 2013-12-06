@@ -10,7 +10,7 @@
 				<a href="#content">Back to Top</a>
 			</aside>
 		</div>
-		<p>This site was built with HTML5, LESS, &amp; jQuery. Created with love by <a href="http://victorlourng.com" target="_blank">Victor Lourng</a>.</p>
+		<p>This site was built with HTML5, LESS, &amp; jQuery. Created with love by <a href="http://victorlourng.com" target="_blank">Victor Lourng</a>. <a href="https://github.com/ILITErobotics/ftc.iliterobotics.org/blob/master/README.md" target="_blank">Fork me on GitHub</a>!</p>
 		<p>In case of inclement weather, please call our FTC Weather Hotline at 804.464.8945 for updates.</p>
 	</div>
 </footer>
